@@ -1,0 +1,19 @@
+Analyzing primex_marketplace...                                 
+
+  error - The named parameter 'item' is required, but there's no corresponding argument - lib\screens\home_screen.dart:121:30 - missing_required_argument
+  error - The named parameter 'details' isn't defined - lib\screens\home_screen.dart:125:25 - undefined_named_parameter
+  error - Too many positional arguments: 0 expected, but 1 found - lib\screens\home_screen.dart:143:9 - extra_positional_arguments_could_be_named
+  error - The argument type 'TextStyle' can't be assigned to the parameter type 'ListTileStyle?'.  - lib\screens\home_screen.dart:144:16 - argument_type_not_assignable
+  error - Expected to find ';' - lib\screens\home_screen.dart:147:7 - expected_token
+warning - Dead code - lib\screens\home_screen.dart:147:8 - dead_code
+  error - Expected an identifier - lib\screens\home_screen.dart:147:8 - missing_identifier
+  error - Unexpected text ';' - lib\screens\home_screen.dart:147:8 - unexpected_token
+warning - The label 'onTap' isn't used - lib\screens\home_screen.dart:148:7 - unused_label
+  error - Expected to find ';' - lib\screens\home_screen.dart:152:7 - expected_token
+  error - Expected an identifier - lib\screens\home_screen.dart:152:8 - missing_identifier
+  error - Expected to find ';' - lib\screens\home_screen.dart:152:8 - expected_token
+  error - Unexpected text ';' - lib\screens\home_screen.dart:152:8 - unexpected_token
+  error - Expected an identifier - lib\screens\home_screen.dart:153:5 - missing_identifier
+  error - Unexpected text ';' - lib\screens\home_screen.dart:153:5 - unexpected_token
+
+15 issues found. (ran in 1.8s)

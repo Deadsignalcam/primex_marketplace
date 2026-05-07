@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "244505639274",
+    "project_id": "primex-e522d",
+    "storage_bucket": "primex-e522d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244505639274:android:e9c4922716267f3112cd13",
+        "android_client_info": {
+          "package_name": "com.example.primex_marketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244505639274-mge1nc53inh4r795m77l8n2jhdp0tip3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCskLqMc5hFZTJTQMXdBMFj8rHs-wDNnFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244505639274-mge1nc53inh4r795m77l8n2jhdp0tip3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "244505639274-012f9cgl4rb1ihqudhqvvoecos89fnr0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.primexMarketplace"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

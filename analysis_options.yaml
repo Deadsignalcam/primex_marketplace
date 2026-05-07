@@ -1,0 +1,5 @@
+analyzer:
+  exclude:
+    - backups/**
+    - build/**
+    - .dart_tool/**

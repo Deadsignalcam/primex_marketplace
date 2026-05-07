@@ -1,0 +1,34 @@
+Resolving dependencies...
+Downloading packages...
+  audioplayers 5.2.1 (6.6.0 available)
+  audioplayers_android 4.0.3 (5.2.1 available)
+  audioplayers_darwin 5.0.2 (6.4.0 available)
+  audioplayers_linux 3.1.0 (4.2.1 available)
+  audioplayers_platform_interface 6.1.0 (7.1.1 available)
+  audioplayers_web 4.1.0 (5.2.0 available)
+  audioplayers_windows 3.1.0 (4.3.0 available)
+  cli_util 0.4.2 (0.5.0 available)
+  js 0.6.7 (0.7.2 available)
+  meta 1.17.0 (1.18.2 available)
+  native_toolchain_c 0.17.6 (0.18.0 available)
+  test_api 0.7.10 (0.7.11 available)
+  vector_math 2.2.0 (2.3.0 available)
+Got dependencies!
+13 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing primex_marketplace...                                 
+
+warning - The URI 'package:flutter_lints/flutter.yaml' included in 'C:\Users\CPFIL\primex_marketplace\analysis_options.yaml' can't be found when analyzing 'C:\Users\CPFIL\primex_marketplace' - analysis_options.yaml:1:10 - include_file_not_found
+   info - 'onDrop' is deprecated and shouldn't be used. Use onDropFile or onDropString instead - lib\screens\edit_listing.dart:240:19 - deprecated_member_use
+  error - The named parameter 'image' is required, but there's no corresponding argument - lib\screens\home_screen.dart:385:48 - missing_required_argument
+  error - The named parameter 'imageUrl' isn't defined - lib\screens\home_screen.dart:390:43 - undefined_named_parameter
+  error - The named parameter 'onLeadTap' isn't defined - lib\screens\home_screen.dart:391:43 - undefined_named_parameter
+warning - Unused import: 'edit_listing.dart' - lib\screens\listing_details.dart:2:8 - unused_import
+  error - The method 'EditListing' isn't defined for the type 'ListingDetailsScreen' - lib\screens\listing_details.dart:35:35 - undefined_method
+   info - 'onDrop' is deprecated and shouldn't be used. Use onDropFile or onDropString instead - lib\widgets\community_feed.dart:230:25 - deprecated_member_use
+   info - 'dart:html' is deprecated and shouldn't be used. Use package:web and dart:js_interop instead - lib\widgets\image_uploader.dart:1:1 - deprecated_member_use
+  error - The method 'uploadFile' isn't defined for the type 'StorageService' - lib\widgets\image_uploader.dart:23:40 - undefined_method
+   info - 'onAccept' is deprecated and shouldn't be used. Use onAcceptWithDetails instead. This callback is similar to onAcceptWithDetails but does not provide drag details. This feature was deprecated after v3.14.0-0.2.pre - lib\widgets\image_uploader.dart:36:9 - deprecated_member_use
+  error - The method 'uploadFile' isn't defined for the type 'StorageService' - lib\widgets\image_uploader.dart:37:44 - undefined_method
+
+12 issues found. (ran in 4.7s)

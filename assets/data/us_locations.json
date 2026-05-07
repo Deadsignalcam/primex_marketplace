@@ -1,0 +1,31 @@
+{
+  "countries": ["United States"],
+  "states": ["Pennsylvania", "New Jersey", "New York", "Ohio", "Florida", "Texas", "California"],
+  "regionsByState": {
+    "Pennsylvania": ["Cambria County", "Monroe County", "Allegheny County"],
+    "New Jersey": ["Passaic County", "Bergen County", "Essex County"],
+    "New York": ["New York City", "Nassau County", "Suffolk County"],
+    "Ohio": ["Franklin County", "Cuyahoga County"],
+    "Florida": ["Miami-Dade County", "Orange County"],
+    "Texas": ["Harris County", "Dallas County"],
+    "California": ["Los Angeles County", "Orange County"]
+  },
+  "citiesByRegion": {
+    "Cambria County": ["Johnstown", "Ebensburg", "Richland"],
+    "Monroe County": ["Stroudsburg", "East Stroudsburg", "Bushkill"],
+    "Allegheny County": ["Pittsburgh", "McKeesport"],
+    "Passaic County": ["Paterson", "Clifton", "Passaic"],
+    "Bergen County": ["Hackensack", "Paramus"],
+    "Essex County": ["Newark", "East Orange"],
+    "New York City": ["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"],
+    "Nassau County": ["Hempstead", "Garden City", "Mineola"],
+    "Suffolk County": ["Huntington", "Islip", "Riverhead"],
+    "Franklin County": ["Columbus"],
+    "Cuyahoga County": ["Cleveland"],
+    "Miami-Dade County": ["Miami"],
+    "Orange County": ["Orlando", "Anaheim"],
+    "Harris County": ["Houston"],
+    "Dallas County": ["Dallas"],
+    "Los Angeles County": ["Los Angeles"]
+  }
+}
