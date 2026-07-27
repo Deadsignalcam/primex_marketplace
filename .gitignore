@@ -72,3 +72,5 @@ android/build/
 *.tmp
 *_BACKUP*
 *_backup*
+google-cloud-sdk/
+assets/videos/*.mp4
