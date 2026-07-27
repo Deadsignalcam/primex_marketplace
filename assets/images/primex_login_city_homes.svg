@@ -1,0 +1,32 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="500" fill="#020711"/>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+<stop stop-color="#061827"/>
+<stop offset="1" stop-color="#020711"/>
+</linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="900" height="500" fill="url(#g)"/>
+<g stroke="#00E5FF" stroke-width="3" fill="#0A1622" filter="url(#glow)">
+<rect x="40" y="170" width="55" height="230"/>
+<rect x="120" y="90" width="75" height="310"/>
+<rect x="220" y="140" width="65" height="260"/>
+<rect x="315" y="70" width="85" height="330"/>
+<rect x="430" y="125" width="70" height="275"/>
+<rect x="540" y="80" width="95" height="320"/>
+<rect x="670" y="155" width="70" height="245"/>
+<rect x="770" y="105" width="80" height="295"/>
+</g>
+<g stroke="#FFD700" stroke-width="3" fill="#111B25" filter="url(#glow)">
+<path d="M70 420 L130 365 L190 420 V485 H70Z"/>
+<path d="M255 420 L325 355 L395 420 V485 H255Z"/>
+<path d="M470 420 L540 355 L610 420 V485 H470Z"/>
+<path d="M690 420 L760 355 L830 420 V485 H690Z"/>
+</g>
+<g stroke="#00E5FF" opacity=".35">
+<line x1="0" y1="485" x2="900" y2="485"/>
+<line x1="0" y1="455" x2="900" y2="455"/>
+<line x1="0" y1="425" x2="900" y2="425"/>
+</g>
+</svg>

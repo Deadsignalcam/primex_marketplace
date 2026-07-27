@@ -1,0 +1,46 @@
+import 'package:flutter/material.dart';
+import 'dart:html' as html;
+
+class PrimeXStripeCheckoutPanel extends StatelessWidget {
+  const PrimeXStripeCheckoutPanel({super.key});
+
+  void _open(String url) {
+    html.window.open(url, '_blank');
+  }
+
+  Widget _button(String title, String price, String url) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.black87,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.cyanAccent),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+          const SizedBox(height: 6),
+          Text(price, style: const TextStyle(color: Colors.greenAccent, fontSize: 14)),
+          const SizedBox(height: 8),
+          ElevatedButton(
+            onPressed: () => _open(url),
+            child: Text('Open Checkout $price'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        _button('Boost Listing - 4 Days', r'$7.99', 'https://buy.stripe.com/bJe28r6Gc2aS98D6Pxgfu02'),
+        _button('Boost Listing - 15 Days', r'$14.99', 'https://buy.stripe.com/00w8wP6Gc5n41Gbb5Ngfu00'),
+        _button('Monthly Foreclosure Leads', r'$49.99', 'https://buy.stripe.com/eVq8wPc0w16ObgL7TBgfu01'),
+      ],
+    );
+  }
+}

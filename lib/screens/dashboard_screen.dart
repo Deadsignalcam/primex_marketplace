@@ -44,7 +44,8 @@ class DashboardScreen extends StatelessWidget {
                     ),
                   ),
                   if (!compact) const SizedBox(width: 16),
-                  if (!compact) const SizedBox(width: 250, child: _RightPanel()),
+                  if (!compact)
+                    const SizedBox(width: 250, child: _RightPanel()),
                 ],
               ),
             );
@@ -58,7 +59,8 @@ class DashboardScreen extends StatelessWidget {
 class _CardBox extends StatelessWidget {
   final Widget child;
   final EdgeInsets padding;
-  const _CardBox({required this.child, this.padding = const EdgeInsets.all(14)});
+  const _CardBox(
+      {required this.child, this.padding = const EdgeInsets.all(14)});
 
   @override
   Widget build(BuildContext context) {
@@ -155,7 +157,8 @@ class _SideBar extends StatelessWidget {
                     const SizedBox(width: 14),
                     Text(
                       e.value[1],
-                      style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
+                      style: const TextStyle(
+                          fontSize: 17, fontWeight: FontWeight.w600),
                     ),
                   ],
                 ),
@@ -224,7 +227,8 @@ class _TopHeader extends StatelessWidget {
       ),
       child: Center(
         child: Text(text,
-            style: TextStyle(color: color, fontSize: 16, fontWeight: FontWeight.w700)),
+            style: TextStyle(
+                color: color, fontSize: 16, fontWeight: FontWeight.w700)),
       ),
     );
   }
@@ -262,7 +266,9 @@ class _Filters extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(f[0], style: const TextStyle(color: AppTheme.muted, fontSize: 12)),
+                        Text(f[0],
+                            style: const TextStyle(
+                                color: AppTheme.muted, fontSize: 12)),
                         Text(f[1], style: const TextStyle(fontSize: 16)),
                       ],
                     ),
@@ -302,7 +308,8 @@ class _MapPanel extends StatelessWidget {
             child: Text('Johnstown',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600)),
           ),
-          const Positioned(top: 18, left: 18, child: _SmallButton('⬚  Draw Search')),
+          const Positioned(
+              top: 18, left: 18, child: _SmallButton('⬚  Draw Search')),
           const Positioned(top: 62, left: 18, child: _MapToggle()),
           const _Pin(left: .28, top: .16, price: '\$145K', blue: true),
           const _Pin(left: .52, top: .16, price: '\$220K', blue: false),
@@ -345,10 +352,12 @@ class _MapPainter extends CustomPainter {
       ..strokeWidth = .8;
 
     for (double x = 0; x < size.width; x += 28) {
-      canvas.drawLine(Offset(x, 0), Offset(x + size.height * .45, size.height), grid);
+      canvas.drawLine(
+          Offset(x, 0), Offset(x + size.height * .45, size.height), grid);
     }
     for (double y = 0; y < size.height; y += 22) {
-      canvas.drawLine(Offset(0, y), Offset(size.width, y + size.width * .05), grid);
+      canvas.drawLine(
+          Offset(0, y), Offset(size.width, y + size.width * .05), grid);
     }
 
     final road = Paint()
@@ -378,7 +387,11 @@ class _Pin extends StatelessWidget {
   final double top;
   final String price;
   final bool blue;
-  const _Pin({required this.left, required this.top, required this.price, required this.blue});
+  const _Pin(
+      {required this.left,
+      required this.top,
+      required this.price,
+      required this.blue});
 
   @override
   Widget build(BuildContext context) {
@@ -398,7 +411,8 @@ class _Pin extends StatelessWidget {
                 border: Border.all(color: color),
               ),
               child: Text(price,
-                  style: TextStyle(color: color, fontSize: 16, fontWeight: FontWeight.bold)),
+                  style: TextStyle(
+                      color: color, fontSize: 16, fontWeight: FontWeight.bold)),
             ),
             Icon(Icons.location_pin, color: color, size: 34),
           ],
@@ -448,7 +462,8 @@ class _MapToggle extends StatelessWidget {
           width: 82,
           decoration: BoxDecoration(
             color: AppTheme.panel,
-            borderRadius: const BorderRadius.horizontal(right: Radius.circular(7)),
+            borderRadius:
+                const BorderRadius.horizontal(right: Radius.circular(7)),
             border: Border.all(color: AppTheme.border),
           ),
           child: const Center(child: Text('Satellite')),
@@ -494,7 +509,10 @@ class _CategoriesBox extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text('All Categories',
-              style: TextStyle(color: AppTheme.blue, fontSize: 18, fontWeight: FontWeight.bold)),
+              style: TextStyle(
+                  color: AppTheme.blue,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
           Expanded(
             child: ListView(
@@ -504,11 +522,16 @@ class _CategoriesBox extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 7),
                   child: Row(
                     children: [
-                      Text(e[0], style: const TextStyle(color: AppTheme.blue, fontSize: 17)),
+                      Text(e[0],
+                          style: const TextStyle(
+                              color: AppTheme.blue, fontSize: 17)),
                       const SizedBox(width: 8),
-                      Expanded(child: Text(e[1], style: const TextStyle(fontSize: 14))),
+                      Expanded(
+                          child:
+                              Text(e[1], style: const TextStyle(fontSize: 14))),
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 7, vertical: 3),
                         decoration: BoxDecoration(
                           color: AppTheme.blue.withOpacity(.25),
                           borderRadius: BorderRadius.circular(6),
@@ -546,7 +569,8 @@ class _FeaturedListings extends StatelessWidget {
             children: [
               Expanded(
                 child: Text('Featured Listings',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                    style:
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               ),
               Text('View All', style: TextStyle(color: AppTheme.blue)),
             ],
@@ -571,7 +595,8 @@ class _FeaturedListings extends StatelessWidget {
                             children: [
                               Container(
                                 decoration: BoxDecoration(
-                                  borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
+                                  borderRadius: const BorderRadius.vertical(
+                                      top: Radius.circular(10)),
                                   gradient: LinearGradient(
                                     colors: [
                                       Colors.blueGrey.shade700,
@@ -580,7 +605,8 @@ class _FeaturedListings extends StatelessWidget {
                                   ),
                                 ),
                                 child: const Center(
-                                  child: Icon(Icons.house, size: 54, color: Colors.white70),
+                                  child: Icon(Icons.house,
+                                      size: 54, color: Colors.white70),
                                 ),
                               ),
                               if (d[0].isNotEmpty)
@@ -588,12 +614,16 @@ class _FeaturedListings extends StatelessWidget {
                                   top: 8,
                                   left: 8,
                                   child: Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 8, vertical: 4),
                                     decoration: BoxDecoration(
-                                      color: d[0] == 'PREMIUM' ? AppTheme.gold : AppTheme.blue,
+                                      color: d[0] == 'PREMIUM'
+                                          ? AppTheme.gold
+                                          : AppTheme.blue,
                                       borderRadius: BorderRadius.circular(5),
                                     ),
-                                    child: Text(d[0], style: const TextStyle(fontSize: 10)),
+                                    child: Text(d[0],
+                                        style: const TextStyle(fontSize: 10)),
                                   ),
                                 ),
                             ],
@@ -606,13 +636,16 @@ class _FeaturedListings extends StatelessWidget {
                             children: [
                               Text(d[1],
                                   style: const TextStyle(
-                                      fontSize: 19, fontWeight: FontWeight.bold)),
+                                      fontSize: 19,
+                                      fontWeight: FontWeight.bold)),
                               const SizedBox(height: 5),
                               Text(d[2],
-                                  style: const TextStyle(color: AppTheme.muted, fontSize: 12)),
+                                  style: const TextStyle(
+                                      color: AppTheme.muted, fontSize: 12)),
                               const SizedBox(height: 8),
                               const Text('📍 Johnstown, PA',
-                                  style: TextStyle(color: AppTheme.muted, fontSize: 12)),
+                                  style: TextStyle(
+                                      color: AppTheme.muted, fontSize: 12)),
                             ],
                           ),
                         ),
@@ -658,7 +691,10 @@ class _MessagesBox extends StatelessWidget {
           const SizedBox(height: 18),
           const Row(
             children: [
-              CircleAvatar(radius: 22, backgroundColor: AppTheme.blue, child: Icon(Icons.person)),
+              CircleAvatar(
+                  radius: 22,
+                  backgroundColor: AppTheme.blue,
+                  child: Icon(Icons.person)),
               SizedBox(width: 12),
               Expanded(child: Text('Michael Johnson\nOnline')),
               Icon(Icons.call, size: 18),
@@ -687,7 +723,9 @@ class _MessagesBox extends StatelessWidget {
             ),
             child: const Row(
               children: [
-                Expanded(child: Text('Type a message...', style: TextStyle(color: AppTheme.muted))),
+                Expanded(
+                    child: Text('Type a message...',
+                        style: TextStyle(color: AppTheme.muted))),
                 Icon(Icons.send, color: AppTheme.blue),
               ],
             ),
@@ -738,7 +776,9 @@ class _ActivityBox extends StatelessWidget {
         children: [
           const Row(
             children: [
-              Expanded(child: Text('Recent Activity', style: TextStyle(fontSize: 18))),
+              Expanded(
+                  child:
+                      Text('Recent Activity', style: TextStyle(fontSize: 18))),
               Text('View All', style: TextStyle(color: AppTheme.blue)),
             ],
           ),
@@ -750,9 +790,15 @@ class _ActivityBox extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 15),
                   child: Row(
                     children: [
-                      CircleAvatar(radius: 14, backgroundColor: AppTheme.blue, child: Text(e[0], style: const TextStyle(fontSize: 11))),
+                      CircleAvatar(
+                          radius: 14,
+                          backgroundColor: AppTheme.blue,
+                          child:
+                              Text(e[0], style: const TextStyle(fontSize: 11))),
                       const SizedBox(width: 10),
-                      Expanded(child: Text(e[1], style: const TextStyle(fontSize: 12))),
+                      Expanded(
+                          child:
+                              Text(e[1], style: const TextStyle(fontSize: 12))),
                     ],
                   ),
                 );
@@ -777,7 +823,10 @@ class _BottomNav extends StatelessWidget {
         children: [
           _NavItem(Icons.home, 'Home', true),
           _NavItem(Icons.search, 'Search', false),
-          CircleAvatar(radius: 31, backgroundColor: AppTheme.blue, child: Icon(Icons.add, size: 38)),
+          CircleAvatar(
+              radius: 31,
+              backgroundColor: AppTheme.blue,
+              child: Icon(Icons.add, size: 38)),
           _NavItem(Icons.message, 'Messages', false),
           _NavItem(Icons.person, 'Profile', false),
         ],
@@ -797,7 +846,9 @@ class _NavItem extends StatelessWidget {
     return Column(
       children: [
         Icon(icon, color: active ? AppTheme.blue : AppTheme.muted),
-        Text(label, style: TextStyle(color: active ? AppTheme.blue : AppTheme.muted, fontSize: 12)),
+        Text(label,
+            style: TextStyle(
+                color: active ? AppTheme.blue : AppTheme.muted, fontSize: 12)),
       ],
     );
   }

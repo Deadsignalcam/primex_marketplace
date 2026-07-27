@@ -1,0 +1,189 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // RC-3 PrimeX AI private chat history
+    match /users/{userId}/ai_messages/{messageId} {
+      allow read, create, delete:
+        if signedIn() &&
+        (request.auth.uid == userId || isOwner());
+
+      allow update: if false;
+    }
+
+    // RC-3 PrimeX AI owner activity and safety records
+    match /ai_activity/{activityId} {
+      allow create: if signedIn();
+      allow read, update, delete: if isOwner();
+    }
+
+    // RC-3 AI recommendations saved for each user
+    match /users/{userId}/ai_recommendations/{recommendationId} {
+      allow read, update, delete:
+        if signedIn() &&
+        (request.auth.uid == userId || isOwner());
+
+      allow create: if signedIn();
+    }
+
+    // RC-3 AI moderation queue
+    match /ai_moderation/{moderationId} {
+      allow create: if signedIn();
+      allow read, update, delete: if isOwner();
+    }
+
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner() {
+      return signedIn()
+        && (
+          request.auth.token.email == "rosariogonzalezrosalind@gmail.com" ||
+          request.auth.token.email == "support@primexmarketplace.com"
+        );
+    }
+
+    // ==========================================
+    // PRIME X ADMIN
+    // ==========================================
+
+    match /admin/{doc=**} {
+      allow read, write: if isOwner();
+    }
+
+    // ==========================================
+    // PRIME X USERS
+    // ==========================================
+
+    match /users/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    // ==========================================
+    // PRIME X JOBS, SERVICES AND GIGS
+    // ==========================================
+
+    match /jobs_services/{opportunityId} {
+
+      // Public browsing.
+      allow read: if true;
+
+      // Signed-in users may create their own posting.
+      allow create: if signedIn()
+        && request.resource.data.ownerId == request.auth.uid
+        && request.resource.data.userId == request.auth.uid;
+
+      // Owners and PrimeX admins may edit or delete postings.
+      allow update, delete: if signedIn()
+        && (
+          resource.data.ownerId == request.auth.uid ||
+          resource.data.userId == request.auth.uid ||
+          isOwner()
+        );
+
+      // Signed-in users may update engagement counters.
+      allow update: if signedIn()
+        && request.resource.data
+          .diff(resource.data)
+          .affectedKeys()
+          .hasOnly([
+            "viewCount",
+            "views",
+            "lastViewedAt",
+            "saveCount",
+            "saves",
+            "applicantCount",
+            "updatedAt"
+          ]);
+
+      // Applications under each opportunity.
+      match /applications/{applicantId} {
+
+        allow create: if signedIn()
+          && applicantId == request.auth.uid
+          && request.resource.data.applicantId == request.auth.uid;
+
+        allow read: if signedIn()
+          && (
+            applicantId == request.auth.uid ||
+            get(
+              /databases/$(database)/documents/jobs_services/$(opportunityId)
+            ).data.ownerId == request.auth.uid ||
+            isOwner()
+          );
+
+        allow update, delete: if signedIn()
+          && (
+            applicantId == request.auth.uid ||
+            get(
+              /databases/$(database)/documents/jobs_services/$(opportunityId)
+            ).data.ownerId == request.auth.uid ||
+            isOwner()
+          );
+      }
+    }
+
+    // ==========================================
+    // PRIME X COMMUNICATION
+    // ==========================================
+
+    match /chats/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    match /call_rooms/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    // ==========================================
+    // PRIME X FEEDS
+    // ==========================================
+
+    match /posts/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    match /live_feed/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    match /professional_live_feed/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    // ==========================================
+    // PRIME X MARKETPLACE
+    // ==========================================
+
+    match /listings/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    match /ads_promotions/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    // ==========================================
+    // PRIME X APPLICATIONS AND LEADS
+    // ==========================================
+
+    match /affiliate_applications/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    match /youth_applications/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    match /lead_data/{doc=**} {
+      allow read, write: if signedIn();
+    }
+
+    match /reports/{doc=**} {
+      allow read, write: if signedIn();
+    }
+  }
+}

@@ -1,0 +1,36 @@
+import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class StripeCheckoutLinks {
+
+  static const String boost4Days =
+      'https://buy.stripe.com/bJe28r6Gc2aS98D6Pxgfu02';
+
+  static const String boost15Days =
+      'https://buy.stripe.com/00w8wP6Gc5n41Gbb5Ngfu00';
+
+  static const String monthlyLeads =
+      'https://buy.stripe.com/eVq8wPc0w16ObgL7TBgfu01';
+
+  static Future<void> openCheckout(
+    BuildContext context,
+    String url,
+  ) async {
+
+    final Uri uri = Uri.parse(url);
+
+    if (!await launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication,
+    )) {
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Unable to open Stripe Checkout',
+          ),
+        ),
+      );
+    }
+  }
+}

@@ -1,0 +1,19 @@
+class StripeLinks {
+  static const String realtor35Days =
+      'https://buy.stripe.com/4gM14n3uObLsckP2zhgfu04';
+
+  static const String vehicle35Days =
+      'https://buy.stripe.com/28E5kD0hOaHo4SnehZgfu05';
+
+  static const String boost4Days =
+      'https://buy.stripe.com/test_7sI4jz4YOUR7DAY';
+
+  static const String boost15Days =
+      'https://buy.stripe.com/test_28o9AU5YOUR15DAY';
+
+  static const String foreclosureLead =
+      'https://buy.stripe.com/test_8wM7sM6YOURLEAD';
+
+  static const String primeXPro =
+      'https://buy.stripe.com/test_dR67sM7YOURPRO';
+}

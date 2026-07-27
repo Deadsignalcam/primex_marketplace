@@ -1,0 +1,47 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if signedIn() && request.auth.uid == userId;
+
+      match /{sub=**} {
+        allow read, write: if signedIn();
+      }
+    }
+
+    match /messages/{threadId} {
+      allow read, write: if signedIn();
+
+      match /chat/{messageId} {
+        allow read, write: if signedIn();
+      }
+    }
+
+    match /live_feed_posts/{postId} {
+      allow read: if true;
+      allow create, update, delete: if signedIn();
+    }
+
+    match /listings/{listingId} {
+      allow read: if true;
+      allow create, update, delete: if signedIn();
+    }
+
+    match /paid_homepage_ads/{adId} {
+      allow read: if true;
+      allow create, update, delete: if signedIn();
+    }
+
+    match /pro_activation_requests/{id} {
+      allow create, read: if signedIn();
+      allow update, delete: if signedIn();
+    }
+  }
+}

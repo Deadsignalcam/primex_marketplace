@@ -1,11 +1,329 @@
-Analyzing primex_marketplace...                                 
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 93.0.0 (104.0.0 available)
+  _flutterfire_internals 1.3.72 (1.3.73 available)
+  analyzer 10.0.1 (14.0.0 available)
+  cloud_firestore 6.5.0 (6.6.0 available)
+  cloud_firestore_platform_interface 8.0.2 (8.0.3 available)
+  cloud_firestore_web 5.5.0 (5.6.0 available)
+  file_picker 3.0.4 (11.0.2 available)
+  file_selector_android 0.5.2+6 (0.5.2+8 available)
+  firebase_auth 6.5.2 (6.5.3 available)
+  firebase_auth_platform_interface 9.0.2 (9.0.3 available)
+  firebase_auth_web 6.2.2 (6.2.3 available)
+  firebase_core 4.10.0 (4.11.0 available)
+  firebase_core_platform_interface 7.0.1 (7.1.0 available)
+  firebase_core_web 3.8.0 (3.9.0 available)
+  firebase_storage 13.4.2 (13.4.3 available)
+  firebase_storage_platform_interface 6.0.2 (6.0.3 available)
+  firebase_storage_web 3.11.8 (3.11.9 available)
+  flutter_plugin_android_lifecycle 2.0.34 (2.0.35 available)
+  geocoding_android 4.0.1 (5.0.1 available)
+  geocoding_platform_interface 3.2.0 (5.0.0 available)
+  geolocator 14.0.2 (14.0.3 available)
+  geolocator_android 5.0.2 (5.0.3 available)
+  geolocator_apple 2.3.13 (2.3.14 available)
+  geolocator_linux 0.2.4 (0.2.6 available)
+  geolocator_platform_interface 4.2.7 (4.2.8 available)
+  geolocator_web 4.1.3 (4.1.4 available)
+  google_maps_flutter_android 2.19.10 (2.19.12 available)
+  google_sign_in_android 7.2.11 (7.2.13 available)
+  image_picker_android 0.8.13+17 (0.8.13+19 available)
+  latlong2 0.9.1 (0.10.1 available)
+  matcher 0.12.19 (0.12.20 available)
+  meta 1.17.0 (1.18.3 available)
+  package_config 2.2.0 (3.0.0 available)
+  package_info_plus 9.0.1 (10.1.0 available)
+  package_info_plus_platform_interface 3.2.1 (4.1.0 available)
+  path_provider 2.1.5 (2.1.6 available)
+  path_provider_platform_interface 2.1.2 (2.1.3 available)
+  synchronized 3.4.0+1 (3.4.1 available)
+  test 1.30.0 (1.31.1 available)
+  test_api 0.7.10 (0.7.12 available)
+  test_core 0.6.16 (0.6.18 available)
+  url_launcher_android 6.3.30 (6.3.32 available)
+  vector_graphics_compiler 1.2.5 (1.2.6 available)
+  vector_math 2.2.0 (2.4.0 available)
+  video_player_android 2.9.5 (2.9.6 available)
+  win32 5.15.0 (6.3.0 available)
+  xml 6.6.1 (7.0.1 available)
+Got dependencies!
+47 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing lib...                                                
 
-  error - The named parameter 'item' is required, but there's no corresponding argument - lib\screens\home_screen.dart:121:30 - missing_required_argument
-  error - The named parameter 'title' isn't defined - lib\screens\home_screen.dart:122:25 - undefined_named_parameter
-  error - The named parameter 'price' isn't defined - lib\screens\home_screen.dart:123:25 - undefined_named_parameter
-  error - The named parameter 'location' isn't defined - lib\screens\home_screen.dart:124:25 - undefined_named_parameter
-  error - The named parameter 'details' isn't defined - lib\screens\home_screen.dart:125:25 - undefined_named_parameter
-  error - The named parameter 'imageUrl' isn't defined - lib\screens\home_screen.dart:126:25 - undefined_named_parameter
-  error - The named parameter 'onLeadTap' isn't defined - lib\screens\home_screen.dart:127:25 - undefined_named_parameter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_dashboard_page.dart:54:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_dashboard_page.dart:168:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_dashboard_page.dart:170:67 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_dashboard_page.dart:291:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_home_page.dart:54:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_home_page.dart:168:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_home_page.dart:170:67 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_home_page.dart:291:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_page.dart:54:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_page.dart:168:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_page.dart:170:67 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_page.dart:291:42 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\admin\admin_page_backup_1781653776.dart:1:8 - unused_import
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\admin\admin_page_backup_1781653776.dart:105:7 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\admin\admin_page_backup_1781654457.dart:1:8 - unused_import
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\admin\admin_page_backup_1781654457.dart:105:7 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\admin\admin_page_backup_1781662097.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_page_backup_1781662097.dart:103:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_page_backup_1781662097.dart:134:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_page_backup_1781662097.dart:523:22 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_page_backup_1781662097.dart:535:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\admin_page_backup_1781662097.dart:537:31 - deprecated_member_use
+warning - Unused import: '../../widgets/primex_report_button.dart' - lib\features\ads\ads_promotions_page.dart:8:8 - unused_import
+warning - Unused import: '../../services/primex_moderation_service.dart' - lib\features\ads\ads_promotions_page.dart:9:8 - unused_import
+warning - Unused import: '../../widgets/primex_call_button.dart' - lib\features\ads\ads_promotions_page.dart:10:8 - unused_import
+warning - Unused import: 'package:url_launcher/url_launcher.dart' - lib\features\ads\ads_promotions_page.dart:11:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\ads\ads_promotions_page.dart:41:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\ads\ads_promotions_page.dart:118:31 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\ads\ads_promotions_page.dart:125:17 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\ads\live_ads_promotions_page.dart:40:61 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\auth_page.dart:405:54 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\dealroom\deal_room_page.dart:49:21 - deprecated_member_use
+warning - Unused import: '../listings/listing_details_page.dart' - lib\features\feed\live_feed_page.dart:8:8 - unused_import
+warning - Unused import: '../../widgets/primex_report_button.dart' - lib\features\feed\live_feed_page.dart:9:8 - unused_import
+warning - Unused import: '../../widgets/primex_save_button.dart' - lib\features\feed\live_feed_page.dart:11:8 - unused_import
+warning - Unused import: '../../widgets/primex_call_button.dart' - lib\features\feed\live_feed_page.dart:12:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page.dart:123:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page.dart:125:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page.dart:168:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page.dart:309:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BEFORE_BG_MATCH.dart:101:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BEFORE_BG_MATCH.dart:166:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BEFORE_BG_MATCH.dart:168:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BEFORE_BG_MATCH.dart:244:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BEFORE_BG_MATCH.dart:325:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BIG_BACKUP.dart:101:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BIG_BACKUP.dart:166:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BIG_BACKUP.dart:168:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BIG_BACKUP.dart:244:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_BIG_BACKUP.dart:325:31 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\feed\live_feed_page_backup_1781657870.dart:1:8 - unused_import
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\feed\live_feed_page_backup_1781659664.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_backup_1781659664.dart:158:98 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\feed\live_feed_page_backup_1781659693.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_backup_1781659693.dart:164:98 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\feed\live_feed_page_backup_1781660350.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_backup_1781660350.dart:165:98 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_backup_1781660350.dart:239:65 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\feed\live_feed_page_backup_1781661893.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_backup_1781661893.dart:302:98 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_backup_1781673669.dart:301:98 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\feed\live_feed_page_backup_1781697065.dart:301:98 - deprecated_member_use
+warning - Unused import: '../listings/listing_details_page.dart' - lib\features\home\home_page.dart:2:8 - unused_import
+warning - Unused import: '../search/primex_global_search_page.dart' - lib\features\home\home_page.dart:4:8 - unused_import
+warning - Unused import: '../../widgets/primex_home_ads_live_box.dart' - lib\features\home\home_page.dart:7:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\home_page.dart:18:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\home_page.dart:41:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\home_page.dart:180:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\home_page.dart:219:62 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\home_page.dart:240:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\jobs\jobs_services_lead_map_page.dart:49:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\jobs\jobs_services_lead_map_page.dart:91:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\jobs\jobs_services_page.dart:51:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\jobs\jobs_services_page.dart:69:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\jobs\jobs_services_page.dart:131:31 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs\jobs_services_page.dart:145:23 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs_services\jobs_services_page.dart:141:13 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs_services\jobs_services_page.dart:205:7 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs_services\jobs_services_page_before_full_launch_wire.dart:141:13 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs_services\jobs_services_page_before_full_launch_wire.dart:205:7 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs_services\jobs_services_page_before_global_gps.dart:115:13 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs_services\jobs_services_page_before_mobile_gps_fix.dart:141:13 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs_services\jobs_services_page_before_mobile_gps_fix.dart:205:7 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs_services\jobs_services_page_before_pay_post_text.dart:141:13 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\jobs_services\jobs_services_page_before_pay_post_text.dart:205:7 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\leads\leads_page.dart:217:11 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\leads\leads_page_before_deal_room.dart:183:11 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\leads\leads_page_before_offers_title_comps.dart:163:11 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\listings\listing_details_page.dart:56:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\listings\listing_details_page.dart:96:50 - deprecated_member_use
+warning - Unused import: 'package:geocoding/geocoding.dart' - lib\features\listings\listings_page.dart:8:8 - unused_import
+warning - Unused import: '../../widgets/primex_report_button.dart' - lib\features\listings\listings_page.dart:11:8 - unused_import
+warning - Unused import: '../../widgets/primex_save_button.dart' - lib\features\listings\listings_page.dart:13:8 - unused_import
+warning - Unused import: '../../widgets/primex_call_button.dart' - lib\features\listings\listings_page.dart:14:8 - unused_import
+warning - Unused import: '../../widgets/primex_message_button.dart' - lib\features\listings\listings_page.dart:15:8 - unused_import
+warning - Unused import: 'package:url_launcher/url_launcher.dart' - lib\features\listings\listings_page.dart:17:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\listings\listings_page.dart:52:166 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\listings\listings_page.dart:55:9 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\listings\listings_page.dart:135:177 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\listings\listings_page.dart:135:286 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\listings\listings_page.dart:145:31 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\listings_page_before_general_free.dart:407:9 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\live_feed\live_feed_page.dart:188:67 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\map\map_page.dart:181:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\map\map_page.dart:243:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\map\map_page.dart:275:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\map\map_page_BIG_BACKUP.dart:109:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\map\map_page_before_google_real.dart:97:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\map\map_page_before_media_pins.dart:97:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\messages\messages_page.dart:82:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\messages\messages_page.dart:91:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\messages\messages_page.dart:138:61 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\messages\messages_page.dart:158:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\messages\messages_page.dart:169:62 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\owner\prime_owner_command_center.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\owner\prime_owner_command_center.dart:183:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\post\primex_post_hub_page.dart:75:47 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\primex_pro\primex_pro_page.dart:238:13 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\primex_pro\primex_pro_page.dart:455:7 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\profile_page.dart:32:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\profile_page.dart:145:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\profile_page.dart:165:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\profile_page.dart:427:31 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\profile\profile_update_hardwire_pages.dart:1:8 - unused_import
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\features\profile\public_user_profile_page.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\public_user_profile_page.dart:227:22 - deprecated_member_use
+warning - The value of the local variable 'email' isn't used - lib\features\profile\search_people_page.dart:84:33 - unused_local_variable
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\search\primex_global_search_page.dart:66:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\search\primex_global_search_page.dart:154:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\search\primex_global_search_page.dart:167:43 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\live_feed_section.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\live_feed_section.dart:36:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\live_feed_section.dart:72:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\live_feed_section.dart:79:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\live_feed_section.dart:98:56 - deprecated_member_use
+warning - Unused import: 'package:flutter_svg/flutter_svg.dart' - lib\main.dart:5:8 - unused_import
+warning - Unused import: 'features/listings/listings_page.dart' - lib\main.dart:9:8 - unused_import
+warning - Unused import: 'features/primex_pro/primex_pro_page.dart' - lib\main.dart:14:8 - unused_import
+warning - Unused import: 'features/leads/leads_page.dart' - lib\main.dart:17:8 - unused_import
+warning - Unused import: 'features/dealroom/deal_room_page.dart' - lib\main.dart:18:8 - unused_import
+warning - Unused import: 'features/history/post_history_page.dart' - lib\main.dart:19:8 - unused_import
+warning - Unused import: 'features/admin/admin_page.dart' - lib\main.dart:20:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\main.dart:48:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\main.dart:105:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\main.dart:128:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\calls_messages_screen.dart:45:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\calls_messages_screen.dart:98:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\calls_messages_screen.dart:184:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\calls_messages_screen.dart:232:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\categories_screen.dart:49:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\categories_screen.dart:50:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\dashboard_screen.dart:68:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\dashboard_screen.dart:73:34 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\dashboard_screen.dart:344:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\dashboard_screen.dart:355:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\dashboard_screen.dart:513:48 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\screens\home_shell.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\home_shell.dart:117:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\home_shell.dart:127:62 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\map_screen.dart:78:55 - deprecated_member_use
+warning - Unused import: '../models/listing_model.dart' - lib\screens\post_listing_screen.dart:2:8 - unused_import
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\screens\post_screen.dart:1:8 - unused_import
+   info - 'dart:html' is deprecated and shouldn't be used. Use package:web and dart:js_interop instead - lib\screens\post_screen.dart:2:1 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\post_screen.dart:316:40 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\screens\primex_dashboard_screen.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:121:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:130:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:134:30 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:162:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:163:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:205:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:245:27 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:304:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:305:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:309:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:314:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:499:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:561:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:563:19 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\primex_dashboard_screen.dart:567:21 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\theme\primex_theme.dart:30:17 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\theme\primex_theme.dart:32:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\theme\primex_theme.dart:35:25 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\theme\primex_theme.dart:49:25 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\ui\premium\assistant_corner_orb.dart:17:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\ui\premium\assistant_corner_orb.dart:18:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\ui\premium\assistant_corner_orb.dart:24:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\ui\premium\cyber_background.dart:53:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\ui\premium\cyber_background_backup.dart:53:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\ui\premium\floating_ai_orb.dart:38:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\ui\premium\floating_ai_orb.dart:43:44 - deprecated_member_use
+   info - 'dart:html' is deprecated and shouldn't be used. Use package:web and dart:js_interop instead - lib\widgets\boost_799_checkout_button.dart:2:1 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\boost_799_checkout_button.dart:20:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\dashboard_home.dart:62:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\dashboard_home.dart:64:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\digital_background.dart:30:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\digital_background.dart:31:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\digital_background.dart:32:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\digital_background.dart:42:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\global_location_block.dart:124:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\home_live_feed_box.dart:23:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\home_live_feed_box.dart:25:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\home_live_feed_box.dart:43:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\neon_city_background.dart:36:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\neon_city_background.dart:60:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\neon_city_background.dart:93:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\neon_city_background.dart:120:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\neon_money_chart.dart:18:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\neon_money_chart.dart:64:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\neon_money_chart.dart:80:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\pricing_cards.dart:15:28 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_ai_watch_247.dart:22:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_ai_watch_247.dart:44:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_ai_watch_247.dart:73:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_background.dart:65:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_background.dart:74:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_background.dart:83:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_background.dart:138:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_growth_chart.dart:19:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_ads_live_box.dart:19:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_ads_live_box.dart:57:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_live_ads_box.dart:13:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_live_feed_box.dart:24:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_live_feed_full.dart:23:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_live_feed_full.dart:51:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_live_feed_preview.dart:24:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_live_posting_box.dart:23:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_live_posting_box.dart:25:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_live_posting_box.dart:66:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_right_ads_box.dart:19:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_right_ads_box.dart:50:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_three_tabs.dart:35:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_home_top_logo.dart:13:29 - deprecated_member_use
+warning - Unused import: 'package:primex_marketplace/features/live_feed/live_feed_page.dart' - lib\widgets\primex_live_feed_post.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_live_feed_post.dart:31:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_live_feed_post.dart:36:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_live_feed_post.dart:63:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_live_feed_post.dart:87:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_notification_bell.dart:72:59 - deprecated_member_use
+warning - The value of the local variable 'x' isn't used - lib\widgets\primex_people_search.dart:28:11 - unused_local_variable
+   info - 'dart:html' is deprecated and shouldn't be used. Use package:web and dart:js_interop instead - lib\widgets\primex_posting_access.dart:2:1 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_posting_access.dart:12:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_pro_gate.dart:40:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_search_live_feed_section.dart:15:33 - deprecated_member_use
+   info - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\widgets\primex_signature.dart:1:8 - unnecessary_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:24:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:29:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:52:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:67:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:71:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:86:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:100:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:118:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:140:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:161:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:177:58 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:208:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:231:62 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:255:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\primex_signature.dart:276:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\profile_levels_widget.dart:20:19 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\profile_levels_widget.dart:25:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\profile_levels_widget.dart:30:26 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\side_menu.dart:32:30 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\side_menu.dart:88:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\syntax_footer.dart:20:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\syntax_signature_footer.dart:14:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\syntax_signature_footer.dart:44:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\syntax_signature_footer.dart:68:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\syntax_signature_footer.dart:99:57 - deprecated_member_use
+   info - 'dart:html' is deprecated and shouldn't be used. Use package:web and dart:js_interop instead - lib\widgets\upload_boxes.dart:1:1 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\upload_boxes.dart:53:24 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\video_upload_box.dart:56:44 - deprecated_member_use
 
-7 issues found. (ran in 2.4s)
+273 issues found. (ran in 6.1s)

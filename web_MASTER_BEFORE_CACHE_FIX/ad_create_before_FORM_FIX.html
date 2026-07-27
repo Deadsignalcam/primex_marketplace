@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrimeX Ads & Promote</title>
+<style>
+body{margin:0;background:#050b20;color:white;font-family:Arial;padding:24px}
+.box{max-width:1000px;margin:auto;background:#081a45;border:2px solid #00eaff;border-radius:22px;padding:28px}
+h1{font-size:42px}
+button,.pay{display:block;width:100%;margin:12px 0;padding:18px;border:0;border-radius:14px;background:#00eaff;color:#001;font-weight:900;font-size:18px;text-align:center;text-decoration:none}
+input,textarea,select{width:100%;box-sizing:border-box;margin:10px 0;padding:16px;border-radius:12px;border:2px solid #00eaff;background:#071530;color:white;font-size:16px}
+textarea{min-height:120px}
+.preview{background:#061126;border:1px solid #00eaff;border-radius:12px;padding:12px;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>PrimeX Ads & Promote</h1>
+
+<a class="pay" href="https://buy.stripe.com/aFa5kD7Kg5n4bgLehZgfu0a" target="_blank">Pay Standard Ad 4.99</a>
+<a class="pay" href="https://buy.stripe.com/00w6oH1lS02K0C7gq7gfu0h" target="_blank">Pay Boost 4 Days 7.99</a>
+<a class="pay" href="https://buy.stripe.com/cNi8wPggM4j05WrehZgfu0j" target="_blank">Pay Business Spotlight 9.99</a>
+<a class="pay" href="https://buy.stripe.com/9B628r0hOaHo0C75Ltgfu0i" target="_blank">Pay Boost 15 Days 14.99</a>
+
+<h2>After Payment: Build Your Ad</h2>
+
+<form id="adForm">
+<input name="receiptEmail" placeholder="Stripe Receipt Email" required>
+<input name="businessName" placeholder="Business Name" required>
+<input name="adTitle" placeholder="Ad Title" required>
+<textarea name="adMessage" placeholder="Ad Message / What is this ad about?" required></textarea>
+<input name="website" placeholder="Website Link">
+<input name="phone" placeholder="Phone Number">
+<input name="category" placeholder="Ad Category">
+<input name="paidFor" placeholder="Ad Type Paid For">
+<input name="location" placeholder="City / State / Country">
+
+<label>Upload Logo / Image</label>
+<input id="imageFile" type="file" accept="image/*">
+
+<label>Upload Banner</label>
+<input id="bannerFile" type="file" accept="image/*">
+
+<label>Upload Video / Clip</label>
+<input id="videoFile" type="file" accept="video/*">
+
+<div class="preview" id="preview">No files selected yet.</div>
+
+<button type="submit">Submit Ad For PrimeX Review</button>
+</form>
+</div>
+
+<script>
+function fileName(id){
+  const f=document.getElementById(id).files[0];
+  return f ? f.name : "None";
+}
+function updatePreview(){
+  document.getElementById("preview").innerHTML =
+    "<b>Image:</b> "+fileName("imageFile")+"<br>"+
+    "<b>Banner:</b> "+fileName("bannerFile")+"<br>"+
+    "<b>Video:</b> "+fileName("videoFile");
+}
+["imageFile","bannerFile","videoFile"].forEach(id=>{
+  document.getElementById(id).addEventListener("change", updatePreview);
+});
+document.getElementById("adForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const data = new FormData(this);
+  let body = "PrimeX Ad Review Request%0D%0A%0D%0A";
+  for (const [k,v] of data.entries()) body += k + ": " + encodeURIComponent(v) + "%0D%0A";
+  body += "%0D%0AImage: "+encodeURIComponent(fileName("imageFile"));
+  body += "%0D%0ABanner: "+encodeURIComponent(fileName("bannerFile"));
+  body += "%0D%0AVideo: "+encodeURIComponent(fileName("videoFile"));
+  alert("Ad form captured. Email will open for review submission.");
+  window.location.href = "mailto:rosariogonzalezrosalind@gmail.com?subject=PrimeX Ad Review Request&body="+body;
+});
+</script>
+</body>
+</html>

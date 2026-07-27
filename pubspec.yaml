@@ -6,15 +6,59 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  cloud_firestore: ^6.3.0
-  firebase_auth: ^6.4.0
-  firebase_core: ^4.7.0
-  firebase_storage: ^13.3.0
+  audioplayers: ^6.7.1
+  cloud_firestore: ^6.7.1
+  dio: ^5.9.2
+  file_picker: 10.3.7
+  file_selector: ^1.1.0
+  firebase_ai: ^3.14.1
+  firebase_app_check: ^0.4.5+2
+  firebase_auth: ^6.5.6
+  firebase_core: ^4.10.0
+  firebase_storage: ^13.4.3
   flutter:
     sdk: flutter
-  image_picker: ^1.2.2
+  flutter_animate: ^4.5.2
+  flutter_map: ^8.3.0
+  flutter_riverpod: ^3.3.2
+  flutter_svg: ^2.3.0
+  geocoding: ^4.0.0
+  geolocator: ^14.0.2
+  google_maps_flutter: ^2.17.1
+  google_sign_in: ^7.2.0
+  http: ^1.6.0
+  image_picker: ^1.2.3
+  latlong2: ^0.9.1
+  local_auth: ^3.0.2
+  lottie: ^3.3.3
+  shared_preferences: ^2.5.5
+  sign_in_with_apple: ^8.1.0
+  url_launcher: ^6.3.2
+  uuid: ^4.5.3
+  video_player: ^2.11.1
 
 flutter:
   uses-material-design: true
+
   assets:
+    - assets/images/primex_login_bg.png
+    - assets/images/primex_trends_bg.png
     - assets/images/
+    - assets/images/primex_trends_bg.png
+    - assets/sounds/bell.mp3
+    - assets/sounds/message_received.mp3
+    - assets/sounds/incoming_call.mp3
+    - assets/images/primex_jobs_bg.png
+    - assets/images/primex_trends_bg.png
+    - assets/images/primex_homepage_banner.png
+    - assets/images/primex_trends_bg.png
+    - assets/images/primex_jobs_bg.png
+    - assets/images/primex_trends_bg.png
+    - assets/images/primex_neon_city_two_bg.png
+    - assets/images/primex_trends_bg.png
+    - assets/images/primex_jobs_bg.png
+    - assets/images/primex_trends_bg.png
+    - assets/images/primex_login_city_homes.svg
+    - assets/images/primex_trends_bg.png
+    - assets/images/primex_jobs_bg.png
+    - assets/images/primex_trends_bg.png

@@ -1,0 +1,102 @@
+import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class PrimeXCheckoutTabs extends StatelessWidget {
+  const PrimeXCheckoutTabs({super.key});
+
+  static const String link799 =
+      'https://buy.stripe.com/bJe28r6Gc2aS98D6Pxgfu02';
+  static const String link1499 =
+      'https://buy.stripe.com/00w8wP6Gc5n41Gbb5Ngfu00';
+  static const String link4999 =
+      'https://buy.stripe.com/eVq8wPc0w16ObgL7TBgfu01';
+
+  Future<void> _pay(String url) async {
+    final uri = Uri.parse(url);
+    await launchUrl(uri, mode: LaunchMode.externalApplication);
+  }
+
+  Widget _card({
+    required String title,
+    required String price,
+    required String text,
+    required String url,
+    required IconData icon,
+  }) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: Colors.black.withOpacity(.85),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: Colors.cyanAccent, width: 1),
+      ),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Icon(icon, color: Colors.cyanAccent, size: 22),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(title,
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold)),
+              ),
+              Text(price,
+                  style: const TextStyle(
+                      color: Colors.greenAccent,
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold)),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(text,
+                style: const TextStyle(color: Colors.white70, fontSize: 12)),
+          ),
+          const SizedBox(height: 10),
+          SizedBox(
+            width: double.infinity,
+            height: 40,
+            child: ElevatedButton(
+              onPressed: () => _pay(url),
+              child: Text('Pay $price with Stripe'),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        _card(
+          title: 'Boost Listing - 4 Days',
+          price: '\$7.99',
+          text: 'Featured marketplace boost.',
+          icon: Icons.flash_on,
+          url: link799,
+        ),
+        _card(
+          title: 'Boost Listing - 15 Days',
+          price: '\$14.99',
+          text: 'Premium featured boost for 15 days.',
+          icon: Icons.workspace_premium,
+          url: link1499,
+        ),
+        _card(
+          title: 'Monthly Foreclosure Leads',
+          price: '\$49.99',
+          text: 'Investor lead access for foreclosure opportunities.',
+          icon: Icons.real_estate_agent,
+          url: link4999,
+        ),
+      ],
+    );
+  }
+}

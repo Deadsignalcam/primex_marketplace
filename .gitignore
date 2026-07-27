@@ -43,3 +43,32 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+node_modules/
+build/
+.firebase/
+
+# ===== PrimeX Local Files =====
+
+# Backup folders
+_SAFE_BACKUPS/
+STABLE_BACKUPS/
+_archive/
+_archive_not_analyzed/
+_auth_backups/
+_payment_backups/
+firestore_rule_backups/
+
+# Node / build
+node_modules/
+build/
+android/build/
+
+# Logs / reports
+*.txt
+*.log
+
+# Backup copies
+*.bak
+*.tmp
+*_BACKUP*
+*_backup*

@@ -1,0 +1,62 @@
+import 'package:flutter/material.dart';
+import 'dart:html' as html;
+
+class LiveStripeCheckoutPanel extends StatelessWidget {
+  const LiveStripeCheckoutPanel({super.key});
+
+  void openLink(String url) {
+    html.window.open(url, '_blank');
+  }
+
+  Widget payCard(String title, String price, String url) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: Colors.black.withOpacity(.75),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Colors.cyanAccent),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(
+              '$title\n$price',
+              style: const TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () => openLink(url),
+            child: const Text('Checkout'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        payCard(
+          'Boost 4 Days',
+          '\$7.99',
+          'https://buy.stripe.com/bJe28r6Gc2aS98D6Pxgfu02',
+        ),
+        payCard(
+          'Boost 15 Days',
+          '\$14.99',
+          'https://buy.stripe.com/00w8wP6Gc5n41Gbb5Ngfu00',
+        ),
+        payCard(
+          'PrimeX Pro Unlimited Leads',
+          '\$49.99/mo',
+          'https://buy.stripe.com/eVq8wPc0w16ObgL7TBgfu01',
+        ),
+      ],
+    );
+  }
+}

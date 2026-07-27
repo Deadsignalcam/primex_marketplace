@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrimeX Live Map</title>
+<style>
+body{margin:0;background:#050b20;color:white;font-family:Arial}
+.wrap{padding:18px}
+.card{border:2px solid #00eaff;border-radius:20px;padding:16px;background:#07193f;box-shadow:0 0 25px #00eaff55}
+button{padding:14px 20px;border:0;border-radius:12px;background:#00eaff;font-weight:900;margin:6px;cursor:pointer}
+iframe{width:100%;height:620px;border:2px solid #00eaff;border-radius:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<h1>PrimeX Live Map</h1>
+
+<button onclick="normalMap()">Normal Map</button>
+<button onclick="satelliteMap()">Satellite View</button>
+<button onclick="openGoogle()">Open Full Google Maps</button>
+<button onclick="location.href='/'">Back to PrimeX</button>
+
+<br><br>
+<iframe id="map" src="https://www.google.com/maps?q=Pennsylvania&output=embed"></iframe>
+</div>
+</div>
+
+<script>
+const normal = "https://www.google.com/maps?q=Pennsylvania&output=embed";
+const satellite = "https://www.google.com/maps?q=Pennsylvania&t=k&output=embed";
+const full = "https://www.google.com/maps?q=Pennsylvania&t=k";
+
+function normalMap(){ document.getElementById("map").src = normal; }
+function satelliteMap(){ document.getElementById("map").src = satellite; }
+function openGoogle(){ window.open(full, "_blank"); }
+</script>
+</body>
+</html>
